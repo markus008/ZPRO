@@ -20,7 +20,7 @@ int main()
     }
     else cout << "Unable to open file"<<endl;
 
-    cout << "Pocet slov v zeznamu: "<< s.getPocet() << endl;
+    cout << "Pocet slov v seznamu: "<< s.getPocet() << endl;
     cout << "Prumerna delka slova v seznamu: "<< s.getPrumer() << "\n" << endl;
     cout << s << endl;
 
