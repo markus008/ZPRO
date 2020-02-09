@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1581284877 source:c:\users\marek\documents\codeblox\ukol\main.cpp
+	"seznam.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1581264989 c:\users\marek\documents\codeblox\ukol\include\seznam.h
+	"Prvek.h"
+
+1581244265 c:\users\marek\documents\codeblox\ukol\include\prvek.h
+	<iostream>
+
+1581284610 source:c:\users\marek\documents\codeblox\ukol\src\prvek.cpp
+	"Prvek.h"
+	<bits/stdc++.h>
+
+1581265814 source:c:\users\marek\documents\codeblox\ukol\src\seznam.cpp
+	"seznam.h"
+
