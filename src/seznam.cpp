@@ -71,12 +71,12 @@ ostream & operator<<(ostream & os, const Seznam & s)
         int pocet = 0;
         while(pom2 != s.zarazka)
         {
-            if(pom->getData() == pom2->getData())
+            if(pom->getDataInLower() == pom2->getDataInLower())
                 pocet++;
 
             pom2 = pom2->getDalsi();
         }
-        os << pom->getData() <<"(samohlasky: "<< pom->getSamohlasky() <<", souhlasky: "<< pom->getSouhlasky()  << ", cetnost: " << pocet  << ")" << endl;
+        os << pom->getData() <<" (samohlasky: "<< pom->getSamohlasky() <<", souhlasky: "<< pom->getSouhlasky()  << ", cetnost: " << pocet  << ")" << endl;
         pom = pom->getDalsi();
     }
     return os;
