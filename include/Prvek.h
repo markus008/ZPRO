@@ -22,6 +22,7 @@ public:
     int getSouhlasky();
     int getSamohlasky();
     Prvek * getDalsi();
+    string getDataInLower();
 
 
 };

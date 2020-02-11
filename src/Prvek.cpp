@@ -35,6 +35,15 @@ string Prvek::getData()
 {
     return data;
 }
+
+string Prvek::getDataInLower()
+{
+    string lover = data;
+    std::for_each(lover.begin(), lover.end(), [](char & c) {
+        c = ::tolower(c);
+    });
+    return lover;
+}
 int Prvek::getSouhlasky()
 {
     string souhlasky = "qwrtpsdfghjklzxcvbnmQWRTPSDFGHJKLZXCVBNM";
