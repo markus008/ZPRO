@@ -14,7 +14,19 @@ int main()
     {
         while ( getline (myfile,line) )
         {
-            s.pridej_na_zacatek(line);
+            string word = "";
+            for (auto x : line)
+            {
+                if (x == ' ' || x == ',' || x == '.')
+                {
+                    if(word != ""){
+                        s.pridej_na_zacatek(word);
+                        word = "";
+                    }
+                }
+                else word = word + x;
+            }
+            s.pridej_na_zacatek(word);
         }
         myfile.close();
     }
@@ -23,7 +35,6 @@ int main()
     cout << "Pocet slov v seznamu: "<< s.getPocet() << endl;
     cout << "Prumerna delka slova v seznamu: "<< s.getPrumer() << "\n" << endl;
     cout << s << endl;
-
     return 0;
 }
 
